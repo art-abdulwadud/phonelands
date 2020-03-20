@@ -7,15 +7,21 @@ body{
 .top-nav{
 	padding: 5px 5px;
 	text-align: center;
+	background: #16d9e3;
+	height: auto;
+}
+.logo-wrapper{
+	grid-area: l;
 }
 .logo{
 	float: left;
+	border-radius: 20px;
 }
 .search-box{
+	grid-area: c;
 	position: relative;
-	float: right;
 	border-color: transparent;
-	background: #16d9e3;
+	background: rgba(255,255,255,0.5);
 	border-radius: 38px;
 	padding: 10px;
 	width: auto;
@@ -35,6 +41,9 @@ body{
 	align-items: center;
 	color: black;
 	outline: none;
+}
+.account{
+	grid-area: r;
 }
 /** Common Classes **/
 .heading{
@@ -57,12 +66,33 @@ button{
 	border: none;
 	background: transparent;
 }
+.center{
+	display: flex;
+	justify-content: center;
+}
+.black{
+	color: black;
+}
+/** All Grids **/
+.three-secs{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto auto auto;
+	grid-template-areas: "l c r";
+}
 /*
   ##Device = Desktops
 */
 
 @media (min-width: 1281px) {
-
+	/** All Grids **/
+	.three-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto auto auto;
+		grid-template-areas: "l c r";
+		text-align: center;
+	}
 }
 
 /*
@@ -70,7 +100,13 @@ button{
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-
+	/** All Grids **/
+	.three-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto auto auto;
+		grid-template-areas: "l c r";
+	}
 }
 
 /*
@@ -78,7 +114,13 @@ button{
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+	/** All Grids **/
+	.three-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto auto auto;
+		grid-template-areas: "l c r";
+	}
 }
 
 /*
@@ -86,7 +128,13 @@ button{
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
- 
+	/** All Grids **/
+	.three-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto auto auto;
+		grid-template-areas: "l c r";
+	}
 }
 
 /*
@@ -94,7 +142,13 @@ button{
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
+	/** All Grids **/
+	.three-secs{
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto;
+		grid-template-areas: "l" "c" "r";
+	}
 }
 
 /*
@@ -102,5 +156,11 @@ button{
 */
 
 @media (max-width: 480px) {
-  
+	/** All Grids **/
+	.three-secs{
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto;
+		grid-template-areas: "l" "c" "r";
+	}
 }
