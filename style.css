@@ -274,7 +274,7 @@ button{
 		width: 100%;
 	}
 	.navitem{
-		display: none;
+		display: block;
 	}
 	.small-nav-dropdown{
 		display: block;
