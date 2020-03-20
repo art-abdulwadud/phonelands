@@ -51,6 +51,7 @@ nav{
 }
 .toggler{
 	display: none;
+	background: #30c7ec;
 }
 .navlist{
 	list-style: none;
@@ -169,6 +170,12 @@ button{
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+	.toggler{
+		display: block;
+	}
+	.navlist{
+		display: none;
+	}
 	/** All Grids **/
 	.three-secs{
 		display: grid;
@@ -183,6 +190,12 @@ button{
 */
 
 @media (max-width: 480px) {
+	.toggler{
+		display: block;
+	}
+	.navlist{
+		display: none;
+	}
 	/** All Grids **/
 	.three-secs{
 		display: grid;
