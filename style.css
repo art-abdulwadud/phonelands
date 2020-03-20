@@ -54,7 +54,7 @@ nav{
 }
 .navlist{
 	list-style: none;
-	text-align: center;
+	text-align: left;
 }
 .navitem{
 	display: inline-block;
@@ -72,6 +72,9 @@ nav{
 	text-align: left;
 	display: none;
 }
+.small-nav-dropdown{
+	display: none;
+}
 .dd-item{
 	display: block;
 	background: #30c7ec;
@@ -83,8 +86,8 @@ nav{
 	background: rgba(0,0,0,0.8);
 	color: #30c7ec;
 }
-.less, .more{
-	display: none;
+.more{
+	display: initial;
 }
 /*** Common Classes ***/
 .heading{
@@ -138,7 +141,7 @@ button{
 	.droplink:hover .nav-dropdown{
 		display: block;
 	}
-	.sm-droplink{
+	.small-nav-dropdown{
 		display: none;
 	}
 	/** All Grids **/
@@ -159,7 +162,7 @@ button{
 	.droplink:hover .nav-dropdown{
 		display: block;
 	}
-	.sm-droplink{
+	.small-nav-dropdown{
 		display: none;
 	}
 	/** All Grids **/
@@ -179,7 +182,7 @@ button{
 	.droplink:hover .nav-dropdown{
 		display: block;
 	}
-	.sm-droplink{
+	.small-nav-dropdown{
 		display: none;
 	}
 	/** All Grids **/
@@ -199,7 +202,7 @@ button{
 	.droplink:hover .nav-dropdown{
 		display: block;
 	}
-	.sm-droplink{
+	.small-nav-dropdown{
 		display: none;
 	}
 	/** All Grids **/
@@ -231,11 +234,8 @@ button{
 	.navitem{
 		display: block;
 	}
-	.more{
-		display: initial;
-	}
-	.nav-dropdown{
-		display: none;
+	.small-nav-dropdown{
+		display: block;
 		position: relative;	
 	}
 	.dd-item{
@@ -276,11 +276,8 @@ button{
 	.navitem{
 		display: none;
 	}
-	.more{
-		display: initial;
-	}
-	.nav-dropdown{
-		display: none;
+	.small-nav-dropdown{
+		display: block;
 		position: relative;	
 	}
 	.dd-item{
