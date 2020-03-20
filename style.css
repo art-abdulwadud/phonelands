@@ -7,7 +7,7 @@ body{
 .top-nav{
 	padding: 5px 5px;
 	text-align: center;
-	background: #16d9e3;
+	background-image: radial-gradient(circle 248px at center, #46aef7 0%, #30c7ec 47%, #16d9e3 100%);
 	height: auto;
 }
 .logo-wrapper{
@@ -45,15 +45,39 @@ body{
 .account{
 	grid-area: r;
 }
-/** Common Classes **/
+/** Navigation **/
+nav{
+	background: rgba(0,0,0,0.8)
+}
+.toggler{
+	display: none;
+}
+.navlist{
+	list-style: none;
+	text-align: center;
+}
+.navitem{
+	display: inline-block;
+}
+.navlink{
+	color: #30c7ec;
+	transition: 0.4s;
+	margin-right: 1rem;
+}
+.navlink:hover{
+	color: white;
+}
+/*** Common Classes ***/
 .heading{
 	font-family: 'Righteous', cursive;
 }
 .sub-heading{
 	font-family: 'Changa', sans-serif;
+	font-size: calc(80% + 15px);
 }
-.meduim-text{
-	font-family: 'Sen', sans-serif;
+.medium-text{
+	font-family: 'Baloo 2', cursive;
+	font-size: calc(80% + 15px);
 }
 .small-text{
 	font-family: 'Baloo 2', cursive;
@@ -72,6 +96,9 @@ button{
 }
 .black{
 	color: black;
+}
+.cursor{
+	cursor: pointer;
 }
 /** All Grids **/
 .three-secs{
