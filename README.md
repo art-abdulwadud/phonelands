@@ -11,7 +11,7 @@ A simple website for selling cell phones.
 5. Search
 6. Sign up
 7. Login
-8. Dashboard
+8. Cart
 
 ### Brand Colors
 
