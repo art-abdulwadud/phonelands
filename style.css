@@ -224,7 +224,7 @@ button{
 	}
 	.small-nav{
 		position: relative;
-		display: none;
+		display: block;
 		text-align: left;
 		width: 100%;
 	}

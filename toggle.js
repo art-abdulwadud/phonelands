@@ -1,6 +1,7 @@
 // DOM Elements
 const menuToggle = document.querySelector('.toggler');
 const smallNav = document.querySelector('.small-nav');
+const nav = document.querySelector('#nav');
 const less = document.querySelector('.less');
 const more = document.querySelector('.more');
 
@@ -9,10 +10,10 @@ let smallNavActive = false;
 
 menuToggle.addEventListener('click', () => {
 	if (smallNavActive) {
+		nav.setAttribute('class', 'navlist');
 		smallNavActive = false;
-		smallNav.style.display = 'none';
 	} else {
+		nav.setAttribute('class', 'small-nav');
 		smallNavActive = true;
-		smallNav.style.display = 'block';
 	}
 });
