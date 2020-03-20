@@ -138,6 +138,9 @@ button{
 	.droplink:hover .nav-dropdown{
 		display: block;
 	}
+	.sm-droplink{
+		display: none;
+	}
 	/** All Grids **/
 	.three-secs{
 		display: grid;
@@ -156,6 +159,9 @@ button{
 	.droplink:hover .nav-dropdown{
 		display: block;
 	}
+	.sm-droplink{
+		display: none;
+	}
 	/** All Grids **/
 	.three-secs{
 		display: grid;
@@ -173,6 +179,9 @@ button{
 	.droplink:hover .nav-dropdown{
 		display: block;
 	}
+	.sm-droplink{
+		display: none;
+	}
 	/** All Grids **/
 	.three-secs{
 		display: grid;
@@ -189,6 +198,9 @@ button{
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.droplink:hover .nav-dropdown{
 		display: block;
+	}
+	.sm-droplink{
+		display: none;
 	}
 	/** All Grids **/
 	.three-secs{
