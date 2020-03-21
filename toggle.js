@@ -1,11 +1,10 @@
-// DOM Elements
+// Navbar DOM Elements
 const menuToggle = document.querySelector('.toggler');
 const nav = document.querySelector('#nav');
 const droplink = document.querySelector('.droplink');
 const navDropdown = document.querySelector('#nav-dropdown-wrapper');
 const less = document.querySelector('.less');
 const more = document.querySelector('.more');
-
 // Toggle navbar on smaller devices
 let smallNavActive = false;
 
