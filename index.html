@@ -23,12 +23,12 @@
     <body>
         <header>
             <div class="top-nav three-secs">
-                <div class="logo-wrapper center">
+                <div class="logo-wrapper center animated fadeInDown">
                     <a href="index.html" class="link">
                         <img src="img/logo.png" alt="" class="logo" height="60" width="150" />
                     </a>
                 </div>
-                <div class="search-box mt-2">
+                <div class="search-box mt-2 animated jackInTheBox one">
                     <form action="" class="search-form">
                         <input
                             type="text"
@@ -43,7 +43,7 @@
                         </button>
                     </form>
                 </div>
-                <div class="account pt-2 small-text mt-2 mb-1">
+                <div class="account pt-2 small-text mt-2 mb-1 animated zoomIn">
                     <img src="img/user.png" alt="user" class="img-fluid mr-2" height="30" width="30" />
                     <a href="signup-login.html" class="link text-white">Sign up</a>
                     or
@@ -55,7 +55,7 @@
                     </a>
                 </div>
             </div>
-            <nav>
+            <nav class="animated fadeInLeft">
                 <div class="text-right p-2 small-text cursor toggler">
                     Menu
                     <img src="img/menu.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
@@ -90,7 +90,7 @@
                     </p>
                     <div class="two-secs">
                         <div class="intro-btns animated fadeInUp three">
-                            <button class="btns btns-light medium-text">Add to Cart</button><br />
+                            <button class="btns btns-light medium-text">Buy</button><br />
                             <button class="btns btns-dark medium-text">More info</button>
                         </div>
                         <div class="price animated rotateInDownLeft four heading">
@@ -113,7 +113,7 @@
                     </p>
                     <div class="two-secs">
                         <div class="intro-btns animated fadeInUp three">
-                            <button class="btns btns-light medium-text">Add to Cart</button><br />
+                            <button class="btns btns-light medium-text">Buy</button><br />
                             <button class="btns btns-dark medium-text">More info</button>
                         </div>
                         <div class="price animated rotateInDownLeft four heading">
@@ -122,8 +122,42 @@
                     </div>
                 </div>
             </div>
+            <div class="slide-btns text-center">
+                <span class="prev cursor" id="prev"><i class="material-icons">chevron_left</i></span>
+                <span class="slide-one cursor"><i class="material-icons">brightness_1</i></span>
+                <span class="slide-two cursor"><i class="material-icons">brightness_1</i></span>
+                <span class="next cursor" id="next"><i class="material-icons">chevron_right</i></span>
+            </div>
         </section>
-        <section class="recent-items"></section>
+        <section class="recent-items">
+            <div class="two-secs">
+                <div class="black-bg heading uppercase center pt-4 pb-4">secure Payments</div>
+                <div class="white-bg heading uppercase center pt-4 pb-4">free delivery</div>
+            </div>
+            <h1 class="heading center mt-3 mb-3">Recently Added</h1>
+            <div class="recent-items-list">
+                <div class="item">
+                    <img src="img/phones/phone1/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+                <div class="item one">
+                    <img src="img/phones/phone2/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+                <div class="item two">
+                    <img src="img/phones/phone3/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+                <div class="item three">
+                    <img src="img/phones/phone4/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+            </div>
+            <div class="slide-btns center mt-5">
+                <span class="prev cursor"><i class="material-icons">chevron_left</i></span>
+                <span class="next cursor"><i class="material-icons">chevron_right</i></span>
+            </div>
+        </section>
         <!-- Optional JavaScript -->
         <script src="js/aos.js"></script>
         <script>

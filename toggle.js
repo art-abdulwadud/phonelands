@@ -29,3 +29,23 @@ droplink.addEventListener('click', () => {
 		dropdownActive = true;
 	}
 });
+
+// Slider DOM Elements
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+
+next.addEventListener('click', () => {
+	clearInterval(startInterval);
+	animate('next');
+});
+prev.addEventListener('click', () => {
+	clearInterval(startInterval);
+	animate('prev');
+});
+
+slideOne.addEventListener('click', () => {
+	animate('first');
+});
+slideTwo.addEventListener('click', () => {
+	animate('second');
+});
