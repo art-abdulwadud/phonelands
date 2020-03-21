@@ -2,6 +2,16 @@ body{
     margin: 0;
     padding: 0;
 }
+button{
+	border: none;
+	background: transparent;
+}
+nav{
+	background: rgba(0,0,0,0.8);
+}
+ul{
+	margin-bottom: 0 !important;
+}
 /*** Intro ***/
 /* Top Nav */
 .top-nav{
@@ -31,7 +41,7 @@ body{
 	background: transparent;
 	float: left;
 	outline: none;
-	width: 80%;
+	width: 85%;
 }
 .search-btn{
 	display: flex;
@@ -45,9 +55,6 @@ body{
 	grid-area: r;
 }
 /** Navigation **/
-nav{
-	background: rgba(0,0,0,0.8);
-}
 .toggler{
 	display: none;
 	background: #16d9e3;
@@ -71,13 +78,14 @@ nav{
 	position: absolute;
 	text-align: left;
 	display: none;
+	z-index: 99;
 }
 .small-nav-dropdown{
 	display: none;
 }
 .dd-item{
 	display: block;
-	background: #30c7ec;
+	background: transparent;
 	padding: 5px;
 	color: rgba(0,0,0,0.8);
 	transition: 0.4s;
@@ -89,13 +97,36 @@ nav{
 .more{
 	display: initial;
 }
+/** Intro section **/
+.intro-sec{
+	background-image: linear-gradient(#16d9e3,#30c7ec, #46aef7);
+	background-size: cover;
+	height: auto;
+	min-height: 100vh;
+	position: relative;
+}
+.intro-img{
+	height: auto;
+	max-height: 60vh;
+	width: auto;
+}
+/** Recent items **/
+.recent-items{
+	background: linear-gradient( #46aef7, #30c7ec, #16d9e3);
+	background-size: cover;
+	height: auto;
+	min-height: 100vh;
+	position: relative;
+}
 /*** Common Classes ***/
 .heading{
 	font-family: 'Righteous', cursive;
+	font-size: calc(100% + 20px);
 }
 .sub-heading{
-	font-family: 'Changa', sans-serif;
+	font-family: 'Righteous', cursive;
 	font-size: calc(80% + 15px);
+	text-transform: uppercase;
 }
 .medium-text{
 	font-family: 'Baloo 2', cursive;
@@ -108,10 +139,6 @@ nav{
 .link:hover{
 	text-decoration: none;
 }
-button{
-	border: none;
-	background: transparent;
-}
 .center{
 	display: flex;
 	justify-content: center;
@@ -119,19 +146,42 @@ button{
 .cursor{
 	cursor: pointer;
 }
+.overflow-hidden{
+	overflow: hidden;
+}
+.btns{
+	padding: 2px 30px 2px 30px;
+	border-radius: 20px;
+	margin: 5px 0 5px 0;
+	transition: 0.5s;
+	min-width: 200px;
+}
+.btns-light{
+	border: 1px solid #16d9e3;
+	background: white;
+	color: #16d9e3;
+}
+.btns-light:hover{
+	border: 1px solid white;
+	background: #16d9e3;
+	color: white;
+}
+.btns-dark{
+	border: 1px solid white;
+	background: rgba(0,0,0,0.3);
+	color: white;
+}
+.btns-dark:hover{
+	border: 1px solid rgba(0,0,0,0.3);
+	background: #16d9e3;
+	color: white;
+}
 /* colors */
 .black{
 	color: black;
 }
 .blue-ish{
 	color: #30c7ec;
-}
-/** All Grids **/
-.three-secs{
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: auto auto auto;
-	grid-template-areas: "l c r";
 }
 /*
   ##Device = Desktops
@@ -151,6 +201,12 @@ button{
 		grid-template-columns: auto auto auto;
 		grid-template-areas: "l c r";
 		text-align: center;
+	}
+	.two-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: "l r";
 	}
 }
 
@@ -172,6 +228,12 @@ button{
 		grid-template-columns: auto auto auto;
 		grid-template-areas: "l c r";
 	}
+	.two-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: "l r";
+	}
 }
 
 /*
@@ -192,6 +254,12 @@ button{
 		grid-template-columns: auto auto auto;
 		grid-template-areas: "l c r";
 	}
+	.two-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: "l r";
+	}
 }
 
 /*
@@ -211,6 +279,12 @@ button{
 		grid-template-rows: auto;
 		grid-template-columns: auto auto auto;
 		grid-template-areas: "l c r";
+	}
+	.two-secs{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: "l r";
 	}
 }
 
@@ -254,6 +328,12 @@ button{
 		grid-template-columns: auto;
 		grid-template-areas: "l" "c" "r";
 	}
+	.two-secs{
+		display: grid;
+		grid-template-rows: 40% 60%;
+		grid-template-columns: auto;
+		grid-template-areas: "l" "r";
+	}
 }
 
 /*
@@ -294,5 +374,11 @@ button{
 		grid-template-rows: auto auto auto;
 		grid-template-columns: auto;
 		grid-template-areas: "l" "c" "r";
+	}
+	.two-secs{
+		display: grid;
+		grid-template-rows: 40% 60%;
+		grid-template-columns: auto;
+		grid-template-areas: "l" "r";
 	}
 }

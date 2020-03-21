@@ -29,7 +29,14 @@
                 </div>
                 <div class="search-box mt-2">
                     <form action="" class="search-form">
-                        <input type="text" name="search" class="small-text" placeholder="Search" id="search" />
+                        <input
+                            type="text"
+                            name="search"
+                            class="small-text"
+                            placeholder="Search"
+                            id="search"
+                            autocomplete="off"
+                        />
                         <button type="submit" class="search-btn link">
                             <i class="large material-icons">search</i>
                         </button>
@@ -57,7 +64,7 @@
                     <li class="navitem"><a href="" class="navlink link medium-text">About</a></li>
                     <li class="navitem blue-ish cursor droplink medium-text">
                         Phones
-                        <span class="more mt-2"><i class="material-icons">expand_more</i></span>
+                        <span class="more"><i class="material-icons">expand_more</i></span>
                         <div class="nav-dropdown small-text" id="nav-dropdown-wrapper">
                             <span class="dd-item">Recently Added</span>
                             <span class="dd-item">All Products</span>
@@ -67,7 +74,25 @@
                 </ul>
             </nav>
         </header>
-        <section class="intro-sec"></section>
+        <section class="intro-sec">
+            <div class="two-secs">
+                <div class="overflow-hidden img-sec p-3 center">
+                    <img src="img/phones/phone1/cover1.png" alt="user" class="ml-2 intro-img" />
+                </div>
+                <div class="intro-text">
+                    <p class="sub-heading text-white">new arrivals</p>
+                    <h1 class="heading">Samsung Galaxy Note9</h1>
+                    <p class="small-text">
+                        The largest battery in a Note, ever. When you have a long-lasting battery, you really can go all
+                        day and all night. The Note9 gives you a quick network connection for incredibly fast streaming
+                        and downloading, so you can do more, uninterrupted.
+                    </p>
+                    <button class="btns btns-light medium-text">Add to Cart</button><br />
+                    <button class="btns btns-dark medium-text">More info</button>
+                </div>
+            </div>
+        </section>
+        <section class="recent-items"></section>
         <!-- Optional JavaScript -->
         <script src="js/aos.js"></script>
         <script>
