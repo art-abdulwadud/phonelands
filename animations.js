@@ -116,6 +116,8 @@ const animateRecentItem = (i = null) => {
 	}
 };
 
+let rInterval;
+
 if (recentItems.length > 1) {
-	const rInterval = setInterval(animateRecentItem, 5000);
+	rInterval = setInterval(animateRecentItem, 5000);
 }

@@ -180,6 +180,43 @@ ul{
 .card-info{
 	grid-area: b;
 }
+.product-page{
+	padding-bottom: 20px;
+}
+.product-page-list{
+	list-style: none;
+}
+.product-page-items{
+	display: inline-block;
+	border: 1px solid white;
+	background: #16d9e3;
+	padding: 5px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.product-page-items:hover{
+	background: black;
+	color: #16d9e3;
+}
+.active-page{
+	background: white;
+	color: #16d9e3;
+}
+/** About **/
+.about{
+	background: linear-gradient( #46aef7, #30c7ec, #16d9e3);
+	background-size: cover;
+	height: auto;
+}
+.intro{
+	background-image: url(img/backgrounds/bg4.jpg);
+	background-size: cover;
+	height: auto;
+	min-height: 10vh;
+	position: relative;
+	color: #16d9e3;
+	font-size: calc(110% + 30px) !important;
+}
 footer{
 	background-image: url(img/backgrounds/bg4.jpg);
 	position: relative;
@@ -354,7 +391,7 @@ footer{
 	.card-wrapper{
 		display: grid;
 		grid-template-rows: auto;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
@@ -398,7 +435,7 @@ footer{
 	.card-wrapper{
 		display: grid;
 		grid-template-rows: auto;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
@@ -445,7 +482,7 @@ footer{
 	.card-wrapper{
 		display: grid;
 		grid-template-rows: auto;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
