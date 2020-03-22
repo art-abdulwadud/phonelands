@@ -22,15 +22,15 @@ menuToggle.addEventListener('click', () => {
 let dropdownActive = false;
 droplink.addEventListener('click', () => {
 	if (dropdownActive) {
-		navDropdown.setAttribute('class', 'nav-dropdown');
+		navDropdown.setAttribute('class', 'nav-dropdown animated shake small-text');
 		dropdownActive = false;
 	} else {
-		navDropdown.setAttribute('class', 'nav-dropdown small-nav-dropdown');
+		navDropdown.setAttribute('class', 'nav-dropdown small-nav-dropdown animated shake small-text');
 		dropdownActive = true;
 	}
 });
 
-// Slider DOM Elements
+// Intro slider
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 
@@ -49,3 +49,19 @@ slideOne.addEventListener('click', () => {
 slideTwo.addEventListener('click', () => {
 	animate('second');
 });
+
+// Recent items slider
+const nextImg = document.querySelector('#next-img');
+const prevImg = document.querySelector('#prev-img');
+
+if (nextImg != null && prevImg != null) {
+	nextImg.addEventListener('click', () => {
+		clearInterval(rInterval);
+		animateRecentItem();
+	});
+
+	prevImg.addEventListener('click', () => {
+		clearInterval(rInterval);
+		animateRecentItem('prev');
+	});
+}

@@ -11,32 +11,286 @@
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
         <title>Phonelands</title>
         <link href="css/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/animate.css" />
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet" />
         <!-- Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     </head>
     <body>
         <header>
-            <div class="top-nav">
-                <img src="img/logo-transparent.png" alt="" class="logo" />
-                <form action="" class="search-form">
-                    <input type="text" name="search" id="search" />
-                </form>
-                <div class="account">
-                    <i class="material-icons">account_circle</i>
-                    <a class="small-text" href=""></a>
+            <div class="top-nav three-secs">
+                <div class="logo-wrapper center animated fadeInDown">
+                    <a href="index.html" class="link">
+                        <img src="img/logo.png" alt="" class="logo" height="60" width="150" />
+                    </a>
+                </div>
+                <div class="search-box mt-2 animated jackInTheBox one">
+                    <form action="" class="search-form">
+                        <input
+                            type="text"
+                            name="search"
+                            class="small-text"
+                            placeholder="Search"
+                            id="search"
+                            autocomplete="off"
+                        />
+                        <button type="submit" class="search-btn link">
+                            <i class="large material-icons">search</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="account pt-2 small-text mt-2 mb-1 animated zoomIn">
+                    <img src="img/user.png" alt="user" class="img-fluid mr-2" height="30" width="30" />
+                    <a href="signup-login.html" class="link text-white">Sign up</a>
+                    or
+                    <a href="signup-login.html" class="link text-white">Login</a>
+
+                    <a href="cart.html" class="link black">
+                        <img src="img/cart.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                        Cart
+                    </a>
                 </div>
             </div>
-            <nav></nav>
+            <nav>
+                <div class="text-right p-2 small-text cursor toggler">
+                    Menu
+                    <img src="img/menu.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                </div>
+                <ul class="navlist" id="nav">
+                    <li class="navitem"><a href="index.html" class="navlink link medium-text">Home</a></li>
+                    <li class="navitem"><a href="about.html" class="navlink link medium-text">About</a></li>
+                    <li class="navitem blue-ish cursor droplink medium-text">
+                        Phones
+                        <span class="more"><i class="material-icons">expand_more</i></span>
+                        <div class="nav-dropdown small-text animated shake" id="nav-dropdown-wrapper">
+                            <a class="dd-item link black" href="#recent">Recently Added</a>
+                            <a class="dd-item link black" href="#products">All Products</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section class="intro-sec"></section>
+        <section class="intro-sec">
+            <div class="two-secs first">
+                <div class="overflow-hidden img-sec p-3 center animated fadeInLeft">
+                    <img src="img/phones/phone1/cover1.png" alt="user" class="ml-2 intro-img" />
+                </div>
+                <div class="intro-text pl-2">
+                    <p class="sub-heading text-white animated fadeInUp">new arrivals</p>
+                    <h1 class="heading animated fadeInUp one">Samsung Galaxy Note9</h1>
+                    <p class="small-text animated fadeInUp two p">
+                        The largest battery in a Note, ever. When you have a long-lasting battery, you really can go all
+                        day and all night. The Note9 gives you a quick network connection for incredibly fast streaming
+                        and downloading, so you can do more, uninterrupted.
+                    </p>
+                    <div class="two-secs">
+                        <div class="intro-btns animated fadeInUp three">
+                            <button class="btns btns-light medium-text">Buy</button><br />
+                            <button class="btns btns-dark medium-text">More info</button>
+                        </div>
+                        <div class="price animated rotateInDownLeft four heading">
+                            $349.98
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none second">
+                <div class="overflow-hidden img-sec p-3 center first animated fadeInLeft">
+                    <img src="img/phones/phone2/cover1.png" alt="user" class="ml-2 intro-img" />
+                </div>
+                <div class="intro-text pl-2">
+                    <p class="sub-heading text-white animated fadeInUp">new arrivals</p>
+                    <h1 class="heading animated fadeInUp one">BLU Studio View 2019-6.0” GSM</h1>
+                    <p class="small-text animated fadeInUp two p">
+                        6.0” HD+ 18:9 Curved Glass Display. 32GB Internal Memory 1GB RAM Micro SD up to 64GB; Quad Core
+                        1.3GHz processor with Mali-400. Fingerprint Sensor, and Android 8.1 Oreo (Go Edition). 8MP Main
+                        Camera with LED Flash + 8MP Selfie Camera with LED Flash.
+                    </p>
+                    <div class="two-secs">
+                        <div class="intro-btns animated fadeInUp three">
+                            <button class="btns btns-light medium-text">Buy</button><br />
+                            <button class="btns btns-dark medium-text">More info</button>
+                        </div>
+                        <div class="price animated rotateInDownLeft four heading">
+                            $64.99
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-btns text-center">
+                <span class="prev cursor" id="prev"><i class="material-icons">chevron_left</i></span>
+                <span class="slide-one cursor"><i class="material-icons">brightness_1</i></span>
+                <span class="slide-two cursor"><i class="material-icons">brightness_1</i></span>
+                <span class="next cursor" id="next"><i class="material-icons">chevron_right</i></span>
+            </div>
+        </section>
+        <section class="recent-items">
+            <h1 class="heading center pt-3 pb-3" id="recent">Recently Added</h1>
+            <div class="recent-items-list">
+                <div class="item text-center">
+                    <img src="img/phones/phone1/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+                <div class="item text-center one">
+                    <img src="img/phones/phone2/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+                <div class="item text-center two">
+                    <img src="img/phones/phone3/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+                <div class="item three text-center">
+                    <img src="img/phones/phone4/cover1.png" alt="" class="r-item" />
+                    <button class="btns btns-light medium-text">More</button>
+                </div>
+            </div>
+            <div class="slide-btns mt-5">
+                <span class="prev cursor medium-text" id="prev-img"
+                    ><i class="material-icons">chevron_left</i>Previous</span
+                >
+                <span class="next cursor medium-text float-right" id="next-img"
+                    >Next<i class="material-icons">chevron_right</i></span
+                >
+            </div>
+        </section>
+        <section class="product-list">
+            <h1 class="heading center pt-3 pb-3" id="products">All Products</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone1/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone2/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone3/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone4/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone5/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone6/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone7/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone8/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone9/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="text-area">
+                <div class="two-secs-equal small-text">
+                    <div style="grid-area: l;">
+                        <a href="index.html" class="link">
+                            <img src="img/logo-transparent.png" alt="" class="intro-img footer-logo" />
+                        </a>
+                    </div>
+                    <div class="contact center m-2 small-text" style="flex-direction: column;">
+                        <div class="blue-bg text-center p-2">
+                            <img src="img/location.png" alt="user" class="mr-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                Nairobi, Kenya
+                            </a>
+                            <br />
+                            <img src="img/phone.png" alt="user" class="mr-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                +254 713 425 666
+                            </a>
+                            <br />
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/facebook.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/twitter.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/instagram.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/snapchat.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <br />
+                            Created by
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link">Abdulwadud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </footer>
         <!-- Optional JavaScript -->
         <script src="js/aos.js"></script>
         <script>
             AOS.init();
         </script>
+        <script src="animations.js"></script>
+        <script src="toggle.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="jquery/jquery-3.3.1.slim.min.js"></script>
         <script src="popper/popper.min.js"></script>

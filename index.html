@@ -55,21 +55,20 @@
                     </a>
                 </div>
             </div>
-            <nav class="animated fadeInLeft">
+            <nav>
                 <div class="text-right p-2 small-text cursor toggler">
                     Menu
                     <img src="img/menu.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
                 </div>
                 <ul class="navlist" id="nav">
-                    <li class="navitem"><a href="" class="navlink link medium-text">Home</a></li>
-                    <li class="navitem"><a href="" class="navlink link medium-text">About</a></li>
+                    <li class="navitem"><a href="index.html" class="navlink link medium-text">Home</a></li>
+                    <li class="navitem"><a href="about.html" class="navlink link medium-text">About</a></li>
                     <li class="navitem blue-ish cursor droplink medium-text">
                         Phones
                         <span class="more"><i class="material-icons">expand_more</i></span>
-                        <div class="nav-dropdown small-text" id="nav-dropdown-wrapper">
-                            <span class="dd-item">Recently Added</span>
-                            <span class="dd-item">All Products</span>
-                            <span class="dd-item">Best Selling</span>
+                        <div class="nav-dropdown small-text animated shake" id="nav-dropdown-wrapper">
+                            <a class="dd-item link black" href="#recent">Recently Added</a>
+                            <a class="dd-item link black" href="phones.html#products">All Products</a>
                         </div>
                     </li>
                 </ul>
@@ -130,34 +129,121 @@
             </div>
         </section>
         <section class="recent-items">
-            <div class="two-secs">
+            <div class="two-secs-equal">
                 <div class="black-bg heading uppercase center pt-4 pb-4">secure Payments</div>
                 <div class="white-bg heading uppercase center pt-4 pb-4">free delivery</div>
             </div>
-            <h1 class="heading center mt-3 mb-3">Recently Added</h1>
+            <h1 class="heading center mt-3 mb-3" id="recent">Recently Added</h1>
             <div class="recent-items-list">
-                <div class="item">
+                <div class="item text-center">
                     <img src="img/phones/phone1/cover1.png" alt="" class="r-item" />
                     <button class="btns btns-light medium-text">More</button>
                 </div>
-                <div class="item one">
+                <div class="item text-center one">
                     <img src="img/phones/phone2/cover1.png" alt="" class="r-item" />
                     <button class="btns btns-light medium-text">More</button>
                 </div>
-                <div class="item two">
+                <div class="item text-center two">
                     <img src="img/phones/phone3/cover1.png" alt="" class="r-item" />
                     <button class="btns btns-light medium-text">More</button>
                 </div>
-                <div class="item three">
+                <div class="item three text-center">
                     <img src="img/phones/phone4/cover1.png" alt="" class="r-item" />
                     <button class="btns btns-light medium-text">More</button>
                 </div>
             </div>
-            <div class="slide-btns center mt-5">
-                <span class="prev cursor"><i class="material-icons">chevron_left</i></span>
-                <span class="next cursor"><i class="material-icons">chevron_right</i></span>
+            <div class="slide-btns mt-5">
+                <span class="prev cursor medium-text" id="prev-img"
+                    ><i class="material-icons">chevron_left</i>Previous</span
+                >
+                <span class="next cursor medium-text float-right" id="next-img"
+                    >Next<i class="material-icons">chevron_right</i></span
+                >
             </div>
         </section>
+        <section class="product-list text-center pb-3">
+            <h1 class="heading pt-3 pb-3" id="products">Products</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone1/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone2/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone3/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone4/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left">
+                        <h1 class="medium-text">Phone Name</h1>
+                        <p class="small-text">Pirce</p>
+                    </div>
+                </div>
+            </div>
+            <a href="phones.html#products" class="link btns btns-light medium-text">All Products</a>
+        </section>
+        <footer>
+            <div class="text-area">
+                <div class="two-secs-equal small-text">
+                    <div style="grid-area: l;">
+                        <a href="index.html" class="link">
+                            <img src="img/logo-transparent.png" alt="" class="intro-img footer-logo" />
+                        </a>
+                    </div>
+                    <div class="contact center m-2 small-text" style="flex-direction: column;">
+                        <div class="blue-bg text-center p-2">
+                            <img src="img/location.png" alt="user" class="mr-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                Nairobi, Kenya
+                            </a>
+                            <br />
+                            <img src="img/phone.png" alt="user" class="mr-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                +254 713 425 666
+                            </a>
+                            <br />
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/facebook.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/twitter.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/instagram.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/snapchat.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <br />
+                            Created by
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link">Abdulwadud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </footer>
         <!-- Optional JavaScript -->
         <script src="js/aos.js"></script>
         <script>
