@@ -38,7 +38,7 @@ const animate = (d = null) => {
 	}
 };
 
-if (slideOne != null) {
+if (first != null && second != null) {
 	setTimeout(animate, 1000);
 	const startInterval = setInterval(animate, 5000);
 }
