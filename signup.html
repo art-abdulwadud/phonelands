@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Personal CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Icon near the title -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+        <title>Phonelands</title>
+        <link href="css/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet" />
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="top-nav three-secs">
+                <div class="logo-wrapper center animated fadeInDown">
+                    <a href="index.html" class="link">
+                        <img src="img/logo.png" alt="" class="logo" height="60" width="150" />
+                    </a>
+                </div>
+                <div class="search-box mt-2 animated jackInTheBox one">
+                    <form action="" class="search-form">
+                        <input
+                            type="text"
+                            name="search"
+                            class="small-text"
+                            placeholder="Search"
+                            id="search"
+                            autocomplete="off"
+                        />
+                        <button type="submit" class="search-btn link">
+                            <i class="large material-icons">search</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="account pt-2 small-text mt-2 mb-1 animated zoomIn">
+                    <img src="img/user.png" alt="user" class="img-fluid mr-2" height="30" width="30" />
+                    <a href="signup.html" class="link text-white">Sign up</a>
+                    or
+                    <a href="login.html" class="link text-white">Login</a>
+
+                    <a href="cart.html" class="link black">
+                        <img src="img/cart.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                        (<span class="cart-items">3</span>)
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <div class="text-right p-2 small-text cursor toggler">
+                    Menu
+                    <img src="img/menu.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                </div>
+                <ul class="navlist" id="nav">
+                    <li class="navitem"><a href="index.html" class="navlink link medium-text">Home</a></li>
+                    <li class="navitem"><a href="about.html" class="navlink link medium-text">About</a></li>
+                    <li class="navitem blue-ish cursor droplink medium-text">
+                        Phones
+                        <span class="more"><i class="material-icons">expand_more</i></span>
+                        <div class="nav-dropdown small-text animated shake" id="nav-dropdown-wrapper">
+                            <a class="dd-item link black" href="#recent">Recently Added</a>
+                            <a class="dd-item link black" href="phones.html#products">All Products</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <footer>
+            <div class="text-area">
+                <div class="two-secs-equal small-text">
+                    <div style="grid-area: l;" class="p-2">
+                        <a href="index.html" class="link">
+                            <img src="img/logo.png" alt="" class="intro-img logo" />
+                        </a>
+                    </div>
+                    <div class="contact m-2 small-text">
+                        <div class="blue-bg text-center p-2" style="min-height: 100%;">
+                            <img src="img/location.png" alt="user" class="m-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                Nairobi, Kenya
+                            </a>
+                            <br />
+                            <img src="img/phone.png" alt="user" class="m-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                +254 713 425 666
+                            </a>
+                            <br />
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/facebook.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/twitter.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/instagram.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/snapchat.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <br />
+                            Created by
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link">Abdulwadud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="animations.js"></script>
+        <script src="toggle.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="popper/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
