@@ -11,32 +11,282 @@
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
         <title>Phonelands</title>
         <link href="css/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/animate.css" />
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet" />
         <!-- Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css" />
     </head>
     <body>
         <header>
-            <div class="top-nav">
-                <img src="img/logo-transparent.png" alt="" class="logo" />
-                <form action="" class="search-form">
-                    <input type="text" name="search" id="search" />
-                </form>
-                <div class="account">
-                    <i class="material-icons">account_circle</i>
-                    <a class="small-text" href=""></a>
+            <div class="top-nav three-secs">
+                <div class="logo-wrapper center animated fadeInDown">
+                    <a href="index.html" class="link">
+                        <img src="img/logo.png" alt="" class="logo" height="60" width="150" />
+                    </a>
+                </div>
+                <div class="search-box mt-2 animated jackInTheBox one">
+                    <form action="" class="search-form">
+                        <input
+                            type="text"
+                            name="search"
+                            class="small-text"
+                            placeholder="Search"
+                            id="search"
+                            autocomplete="off"
+                        />
+                        <button type="submit" class="search-btn link">
+                            <i class="large material-icons">search</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="account pt-2 small-text mt-2 mb-1 animated zoomIn">
+                    <img src="img/user.png" alt="user" class="img-fluid mr-2" height="30" width="30" />
+                    <a href="signup-login.html" class="link text-white">Sign up</a>
+                    or
+                    <a href="signup-login.html" class="link text-white">Login</a>
+
+                    <a href="cart.html" class="link black">
+                        <img src="img/cart.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                        (<span class="cart-items">3</span>)
+                    </a>
                 </div>
             </div>
-            <nav></nav>
+            <nav>
+                <div class="text-right p-2 small-text cursor toggler">
+                    Menu
+                    <img src="img/menu.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                </div>
+                <ul class="navlist" id="nav">
+                    <li class="navitem"><a href="index.html" class="navlink link medium-text">Home</a></li>
+                    <li class="navitem"><a href="about.html" class="navlink link medium-text">About</a></li>
+                    <li class="navitem blue-ish cursor droplink medium-text">
+                        Phones
+                        <span class="more"><i class="material-icons">expand_more</i></span>
+                        <div class="nav-dropdown small-text animated shake" id="nav-dropdown-wrapper">
+                            <a class="dd-item link black" href="#recent">Recently Added</a>
+                            <a class="dd-item link black" href="phones.html#products">All Products</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section class="intro-sec"></section>
+        <section class="cart">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" aria-label="Checkbox for following text input" checked />
+                                    </div>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control text-center"
+                                    aria-label="Text input with checkbox"
+                                    value="1"
+                                />
+                            </div>
+                        </td>
+                        <th scope="row">Samsang Galaxy Note9</th>
+                        <td>$349.99</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" aria-label="Checkbox for following text input" checked />
+                                    </div>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control text-center"
+                                    aria-label="Text input with checkbox"
+                                    value="1"
+                                />
+                            </div>
+                        </td>
+                        <th scope="row">Apple iPhone 7</th>
+                        <td>$349.99</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" aria-label="Checkbox for following text input" checked />
+                                    </div>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control text-center"
+                                    aria-label="Text input with checkbox"
+                                    value="1"
+                                />
+                            </div>
+                        </td>
+                        <th scope="row">Motorola Moto G8+ Plus</th>
+                        <td>$349.99</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center center pt-4 pb-4">
+                <div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Discount</th>
+                                <td>$0.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Delivery</th>
+                                <td>$0.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td>$1049.97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btns btns-light medium-text w-100">Check out</button>
+                </div>
+            </div>
+        </section>
+        <div class="two-secs-equal">
+            <div class="black-bg heading uppercase center pt-4 pb-4">secure Payments</div>
+            <div class="white-bg heading uppercase center pt-4 pb-4">free delivery</div>
+        </div>
+        <section class="product-list text-center pb-3">
+            <h1 class="heading pt-3 pb-3" id="products">Continue Shopping</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone1/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Samsung Galaxy Note9</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone2/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">BLU Studio View 2019-6.0”</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone3/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Apple iPhone 6s</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone4/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Google - Pixel 3a</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone5/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Motorola Moto G8+ Plus</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone6/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Moto G7</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+            </div>
+            <a href="phones.html#products" class="link btns btns-light medium-text">All Products</a>
+        </section>
+
+        <footer>
+            <div class="text-area">
+                <div class="two-secs-equal small-text">
+                    <div style="grid-area: l;" class="p-2">
+                        <a href="index.html" class="link">
+                            <img src="img/logo.png" alt="" class="intro-img logo" />
+                        </a>
+                    </div>
+                    <div class="contact m-2 small-text">
+                        <div class="blue-bg text-center p-2" style="min-height: 100%;">
+                            <img src="img/location.png" alt="user" class="m-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                Nairobi, Kenya
+                            </a>
+                            <br />
+                            <img src="img/phone.png" alt="user" class="m-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                +254 713 425 666
+                            </a>
+                            <br />
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/facebook.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/twitter.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/instagram.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/snapchat.png" alt="" class="m-2" height="30" width="30"
+                            /></a>
+                            <br />
+                            Created by
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link">Abdulwadud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </footer>
         <!-- Optional JavaScript -->
         <script src="js/aos.js"></script>
         <script>
             AOS.init();
         </script>
+        <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="animations.js"></script>
+        <script src="toggle.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="jquery/jquery-3.3.1.slim.min.js"></script>
         <script src="popper/popper.min.js"></script>
