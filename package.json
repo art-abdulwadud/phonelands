@@ -1,0 +1,23 @@
+{
+  "name": "phonelands",
+  "version": "1.0.0",
+  "description": "phone selling webapp",
+  "main": "animations.js",
+  "dependencies": {
+    "lightbox2": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/art-abdulwadud/phonelands.git"
+  },
+  "author": "Abdulwadud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/art-abdulwadud/phonelands/issues"
+  },
+  "homepage": "https://github.com/art-abdulwadud/phonelands#readme"
+}

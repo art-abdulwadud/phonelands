@@ -11,32 +11,270 @@
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
         <title>Phonelands</title>
         <link href="css/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/animate.css" />
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet" />
         <!-- Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css" />
     </head>
     <body>
         <header>
-            <div class="top-nav">
-                <img src="img/logo-transparent.png" alt="" class="logo" />
-                <form action="" class="search-form">
-                    <input type="text" name="search" id="search" />
-                </form>
-                <div class="account">
-                    <i class="material-icons">account_circle</i>
-                    <a class="small-text" href=""></a>
+            <div class="top-nav three-secs">
+                <div class="logo-wrapper center animated fadeInDown">
+                    <a href="index.html" class="link">
+                        <img src="img/logo.png" alt="" class="logo" height="60" width="150" />
+                    </a>
+                </div>
+                <div class="search-box mt-2 animated jackInTheBox one">
+                    <form action="" class="search-form">
+                        <input
+                            type="text"
+                            name="search"
+                            class="small-text"
+                            placeholder="Search"
+                            id="search"
+                            autocomplete="off"
+                        />
+                        <button type="submit" class="search-btn link">
+                            <i class="large material-icons">search</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="account pt-2 small-text mt-2 mb-1 animated zoomIn">
+                    <img src="img/user.png" alt="user" class="img-fluid mr-2" height="30" width="30" />
+                    <a href="signup-login.html" class="link text-white">Sign up</a>
+                    or
+                    <a href="signup-login.html" class="link text-white">Login</a>
+
+                    <a href="cart.html" class="link black">
+                        <img src="img/cart.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                        Cart
+                    </a>
                 </div>
             </div>
-            <nav></nav>
+            <nav>
+                <div class="text-right p-2 small-text cursor toggler">
+                    Menu
+                    <img src="img/menu.png" alt="user" class="img-fluid ml-2" height="30" width="30" />
+                </div>
+                <ul class="navlist" id="nav">
+                    <li class="navitem"><a href="index.html" class="navlink link medium-text">Home</a></li>
+                    <li class="navitem"><a href="about.html" class="navlink link medium-text">About</a></li>
+                    <li class="navitem blue-ish cursor droplink medium-text">
+                        Phones
+                        <span class="more"><i class="material-icons">expand_more</i></span>
+                        <div class="nav-dropdown small-text animated shake" id="nav-dropdown-wrapper">
+                            <a class="dd-item link black" href="#recent">Recently Added</a>
+                            <a class="dd-item link black" href="phones.html#products">All Products</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section class="intro-sec"></section>
+        <section class="phone">
+            <div class="phone-images">
+                <div class="main-img-wrapper pt-3 animated bounce">
+                    <a
+                        class="example-image-link"
+                        href="img/phones/phone1/cover1.png"
+                        data-lightbox="example-set"
+                        data-title="Samsung Galaxy Note9"
+                        ><img class="example-image main-img" src="img/phones/phone1/cover1.png" alt="" class="lb-img"
+                    /></a>
+                </div>
+                <div class="img-list animated flipInY">
+                    <a
+                        class="example-image-link"
+                        href="img/phones/phone1/cover1.jpg"
+                        data-lightbox="example-set"
+                        data-title="Samsung Galaxy Note9"
+                        ><img class="example-image img-item" src="img/phones/phone1/cover1.jpg" alt=""
+                    /></a>
+                    <a
+                        class="example-image-link"
+                        href="img/phones/phone1/cover3.jpg"
+                        data-lightbox="example-set"
+                        data-title="Samsung Galaxy Note9"
+                        ><img
+                            class="example-image img-item"
+                            src="img/phones/phone1/cover3.jpg"
+                            alt=""
+                            height="100"
+                            width="80"
+                            class="lb-img"
+                    /></a>
+                    <a
+                        class="example-image-link"
+                        href="img/phones/phone1/cover2.jpg"
+                        data-lightbox="example-set"
+                        data-title="Samsung Galaxy Note9"
+                        ><img class="example-image img-item" src="img/phones/phone1/cover2.jpg" alt=""
+                    /></a>
+                    <a
+                        class="example-image-link"
+                        href="img/phones/phone1/cover4.jpg"
+                        data-lightbox="example-set"
+                        data-title="Samsung Galaxy Note9"
+                        ><img class="example-image img-item" src="img/phones/phone1/cover4.jpg" alt=""
+                    /></a>
+                </div>
+            </div>
+            <div class="phone-specs pt-2">
+                <h1 class="heading pl-2">
+                    Samsung Galaxy Note9 GSM Unlocked Phone with 6.4in Screen and 128GB - Ocean Blue (Renewed)
+                </h1>
+                <ul class="specs-list pb-2 pt-2">
+                    <li class="small-text">
+                        The largest battery in a Note, ever. When you have a long-lasting battery, you really can go all
+                        day and all night.
+                    </li>
+                    <li class="small-text">
+                        The Note9 has twice as much storage as the Note8, which means more music, more videos, more
+                        pictures, and less worry when it comes to space on your phone.
+                    </li>
+                    <li class="small-text">
+                        The Note9 gives you a quick network connection for incredibly fast streaming and downloading, so
+                        you can do more, uninterrupted.
+                    </li>
+                    <li class="small-text">
+                        Still amazing on screen, but now the S-Pen has more power off screen. Remotely control different
+                        applications and use the S pen to capture shots from far away, scroll, and play music.
+                    </li>
+                </ul>
+                <div class="intro-btns text-center animated fadeInLeft three p-2 mb-2">
+                    <a href="cart.html" class="link btns btns-light medium-text">Buy</a>
+                    <p class="price animated rotateInUpLeft four heading d-inline-block">
+                        $64.99
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="two-secs-equal">
+            <div class="black-bg heading uppercase center pt-4 pb-4">secure Payments</div>
+            <div class="white-bg heading uppercase center pt-4 pb-4">free delivery</div>
+        </div>
+        <section class="product-list text-center pb-3">
+            <h1 class="heading pt-3 pb-3" id="products">Continue Shopping</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone1/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Samsung Galaxy Note9</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone2/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">BLU Studio View 2019-6.0”</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone3/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Apple iPhone 6s</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone4/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Google - Pixel 3a</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone5/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Motorola Moto G8+ Plus</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/phones/phone6/cover1.jpg" alt="" class="card-img" />
+                    </div>
+                    <div class="card-info text-left ml-2 pb-2">
+                        <h1 class="medium-text">Moto G7</h1>
+                        <p class="small-text">$349.99</p>
+                        <a href="single-phone.html" class="link btns btns-light medium-text">More</a>
+                    </div>
+                </div>
+            </div>
+            <a href="phones.html#products" class="link btns btns-light medium-text">All Products</a>
+        </section>
+
+        <footer>
+            <div class="text-area">
+                <div class="two-secs-equal small-text">
+                    <div style="grid-area: l;">
+                        <a href="index.html" class="link">
+                            <img src="img/logo-transparent.png" alt="" class="intro-img footer-logo" />
+                        </a>
+                    </div>
+                    <div class="contact center m-2 small-text" style="flex-direction: column;">
+                        <div class="blue-bg text-center p-2">
+                            <img src="img/location.png" alt="user" class="mr-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                Nairobi, Kenya
+                            </a>
+                            <br />
+                            <img src="img/phone.png" alt="user" class="mr-2" height="30" width="30" />
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link black">
+                                +254 713 425 666
+                            </a>
+                            <br />
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/facebook.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/twitter.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/instagram.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <a href="https://icons8.com/icon/" target="_black" class="link"
+                                ><img src="img/social-media/snapchat.png" alt="" class="mr-2" height="30" width="30"
+                            /></a>
+                            <br />
+                            Created by
+                            <a target="_black" href="https://github.com/art-abdulwadud" class="link">Abdulwadud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </footer>
         <!-- Optional JavaScript -->
         <script src="js/aos.js"></script>
         <script>
             AOS.init();
         </script>
+        <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="animations.js"></script>
+        <script src="toggle.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="jquery/jquery-3.3.1.slim.min.js"></script>
         <script src="popper/popper.min.js"></script>

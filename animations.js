@@ -7,8 +7,10 @@ const slideTwo = document.querySelector('.slide-two');
 // Animation for the intro slider
 const colorToBlack = element => (element.style.color = 'rgba(0,0,0,0.1)');
 const colorToWhite = element => (element.style.color = 'white');
-colorToBlack(slideTwo);
-colorToWhite(slideOne);
+if (slideTwo != null) {
+	colorToBlack(slideTwo);
+	colorToWhite(slideOne);
+}
 let display = 0;
 
 const animate = (d = null) => {
@@ -36,8 +38,10 @@ const animate = (d = null) => {
 	}
 };
 
-setTimeout(animate, 1000);
-const startInterval = setInterval(animate, 5000);
+if (slideOne != null) {
+	setTimeout(animate, 1000);
+	const startInterval = setInterval(animate, 5000);
+}
 
 // Animation for recent items slider
 const itemdivs = document.querySelectorAll('.item');
@@ -121,3 +125,5 @@ let rInterval;
 if (recentItems.length > 1) {
 	rInterval = setInterval(animateRecentItem, 5000);
 }
+
+

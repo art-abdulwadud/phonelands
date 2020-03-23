@@ -34,21 +34,22 @@ droplink.addEventListener('click', () => {
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 
-next.addEventListener('click', () => {
-	clearInterval(startInterval);
-	animate('next');
-});
-prev.addEventListener('click', () => {
-	clearInterval(startInterval);
-	animate('prev');
-});
-
-slideOne.addEventListener('click', () => {
-	animate('first');
-});
-slideTwo.addEventListener('click', () => {
-	animate('second');
-});
+if (next != null) {
+	next.addEventListener('click', () => {
+		clearInterval(startInterval);
+		animate('next');
+	});
+	prev.addEventListener('click', () => {
+		clearInterval(startInterval);
+		animate('prev');
+	});
+	slideOne.addEventListener('click', () => {
+		animate('first');
+	});
+	slideTwo.addEventListener('click', () => {
+		animate('second');
+	});
+}
 
 // Recent items slider
 const nextImg = document.querySelector('#next-img');
@@ -63,5 +64,17 @@ if (nextImg != null && prevImg != null) {
 	prevImg.addEventListener('click', () => {
 		clearInterval(rInterval);
 		animateRecentItem('prev');
+	});
+}
+
+// Toggle Lightbox
+const mainImg = document.querySelector('.main-img');
+const imgItems = document.querySelectorAll('.img-item');
+
+if (mainImg != null) {
+	imgItems.forEach(imgItem => {
+		imgItem.addEventListener('mouseover', () => {
+			mainImg.src = imgItem.src;
+		});
 	});
 }

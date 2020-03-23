@@ -112,6 +112,7 @@ ul{
 	height: auto;
 	max-height: 60vh;
 	width: auto;
+	max-width: 100%;
 }
 .intro-btns{
 	grid-area: r;
@@ -164,8 +165,13 @@ ul{
 	grid-template-columns: auto;
 	grid-template-rows: auto auto;
 	grid-template-areas: 't' 'b';
-	margin: 5px;
+	margin: 10px;
 	border-radius: 10px;
+	transition: 0.5s;
+}
+.card:hover{
+	margin: 0;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
 }
 .card-img-wrapper{
 	grid-area: t;
@@ -201,6 +207,49 @@ ul{
 .active-page{
 	background: white;
 	color: #16d9e3;
+}
+/** Single phone Images **/
+.phone-images{
+	position: relative;
+	height: auto;
+	width: 100%;
+}
+.main-img-wrapper{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+.main-img{
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.img-list{
+	position: relative;
+	grid-area: down;
+	height: 100px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.img-item{
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #16d9e3;
+}
+.phone-specs{
+	position: relative;
+	height: auto;
+	width: 100%;
+}
+.specs-list{
+	list-style: square;
+}
+.specs-list li{
+	padding: 5px;
 }
 /** About **/
 .about{
