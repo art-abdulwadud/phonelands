@@ -2,6 +2,12 @@
 
 A simple website for selling cell phones.
 
+### Credits and Resources
+
+## Amazon
+
+All the items on this website template are from Amazon. [Here's the link](https://www.amazon.com/Best-Sellers-Cell-Phones/zgbs/wireless/7072561011)
+
 ### Pages
 
 1. Home
