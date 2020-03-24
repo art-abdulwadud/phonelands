@@ -18,10 +18,9 @@ All icons on this website are from Icons. [Check it out and find all the icons y
 2. About
 3. Phones
 4. Single phone
-5. Search
+5. Cart
 6. Sign up
 7. Login
-8. Cart
 
 ### Brand Colors
 
@@ -38,3 +37,4 @@ Hex colors #16d9e3, #30c7ec, #46aef7
 7. LG Stylo 5
 8. Apple iPhone 7 Matte Black
 9. Apple iPhone 8
+
