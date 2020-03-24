@@ -342,6 +342,9 @@ footer{
 	display: flex;
 	justify-content: center;
 }
+.cancel{
+	text-decoration: line-through;
+}
 .cursor{
 	cursor: pointer;
 }
