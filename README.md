@@ -6,7 +6,11 @@ A simple website for selling cell phones.
 
 ## Amazon
 
-All the items on this website template are from Amazon. [Here's the link](https://www.amazon.com/Best-Sellers-Cell-Phones/zgbs/wireless/7072561011)
+All the cell phone names, images and specs on this website template are from Amazon's best sellers in cell phones' list. [Here's the link](https://www.amazon.com/Best-Sellers-Cell-Phones/zgbs/wireless/7072561011)
+
+## Icons
+
+All icons on this website are from Icons. [Check it out and find all the icons you need](https://icons8.com/icons)
 
 ### Pages
 
