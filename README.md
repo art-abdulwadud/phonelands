@@ -10,7 +10,7 @@ All the cell phone names, images and specs on this website template are from Ama
 
 ### Icons
 
-All icons on this website are from Icons. [Check it out and find all the icons you need](https://icons8.com/icons)
+All icons on this website are from Icons. [Check it out and get access to over 100,000 icons](https://icons8.com/icons)
 
 ### Pages
 
