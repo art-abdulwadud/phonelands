@@ -154,7 +154,7 @@ ul{
 }
 /** Cards **/
 .product-list{
-	background: linear-gradient( #16d9e3, #30c7ec, #46aef7);
+	background: linear-gradient( #16d9e3, #30c7ec, #46aef7, #16d9e3);
 	background-size: cover;
 	height: auto;
 	min-height: 100vh;
@@ -293,7 +293,7 @@ footer{
 	height: auto;
 	min-height: 50vh;
 	position: relative;
-	background-image: linear-gradient(to bottom, rgba(70,174,247, 0.9) 0%, rgba(48,199,236, 0.2) 30%);
+	background: rgba(48,199,236, 0.4);
 	z-index: 2;
 }
 .heading{
