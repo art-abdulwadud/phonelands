@@ -1,6 +1,6 @@
 ## Phonelands
 
-A simple website for selling cell phones.
+A simple website for selling cell phones. [Take a peak](https://art-abdulwadud.github.io/phonelands/)
 
 ## Credits and Resources
 
