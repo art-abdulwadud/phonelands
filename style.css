@@ -253,7 +253,7 @@ ul{
 }
 /** About **/
 .about{
-	background: linear-gradient( #46aef7, #30c7ec, #16d9e3);
+	background-image: linear-gradient( #46aef7, #30c7ec, #16d9e3);
 	background-size: cover;
 	height: auto;
 }
@@ -265,6 +265,19 @@ ul{
 	position: relative;
 	color: #16d9e3;
 	font-size: calc(110% + 30px) !important;
+}
+/** User form **/
+.login{
+	height: auto;
+	min-height: 70vh;
+	align-items: center;
+}
+.user-form{
+	background-image: linear-gradient( #16d9e3, #30c7ec, #16d9e3);
+	height: auto;
+}
+input[type="text"]{
+	border: none;
 }
 footer{
 	background-image: url(img/backgrounds/bg4.jpg);
