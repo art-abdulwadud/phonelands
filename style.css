@@ -276,9 +276,6 @@ ul{
 	background-image: linear-gradient( #16d9e3, #30c7ec, #16d9e3);
 	height: auto;
 }
-input[type="text"]{
-	border: none;
-}
 footer{
 	background-image: url(img/backgrounds/bg4.jpg);
 	position: relative;
